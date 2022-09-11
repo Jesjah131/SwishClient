@@ -1,0 +1,158 @@
+.masselitos {
+  position: relative;
+  background: #130f40;
+  mix-blend-mode: normal;
+  background-image: url(Moneyz.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1200px;
+}
+
+.unlist {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 14px;
+  padding-right: 30vw;
+  padding-left: 30vw;
+}
+
+.divider {
+  background: #f6e58d;
+  height: 2px;
+}
+
+.dividerBig {
+  background: #f6e58d;
+  height: 2px;
+  width: 50%;
+}
+
+.masselist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 100px;
+  font-weight: 400;
+  font-family: Roboto;
+}
+.amount {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 56px;
+
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.amount:after {
+  content: " kr";
+}
+
+.message {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 56px;
+
+  color: #ffffff;
+}
+
+.highscore {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 70px;
+  padding-top: 50px;
+  letter-spacing: 0.065em;
+  color: #dff9fb;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  white-space: nowrap;
+}
+
+.highscoreBig {
+  font-family: "Share";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 250px;
+  line-height: 93.19%;
+  color: #dff9fb;
+}
+
+.highscoreBig:after {
+  content: " kr";
+  font-size: 60px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+.highscore:after {
+  content: " kr";
+  font-size: 50px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.name {
+  color: #ffffff;
+  font-family: "Share";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.messageBig {
+  color: #ffffff;
+  font-family: "Share";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+}
+
+.masselistBig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 0px;
+
+  width: 915px;
+  height: 98px;
+}
+
+.unlistBig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 42px;
+}
