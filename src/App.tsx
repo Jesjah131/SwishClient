@@ -15,7 +15,7 @@ export const MainComponent = () => {
       loadingData();
     }, 5000);
     return () => {
-      // clear up
+      // clear upp
       clearInterval(interval);
     };
   }, []);
