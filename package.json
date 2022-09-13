@@ -2,6 +2,7 @@
   "name": "masselitos",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jesjah131.github.io/SwishClient",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
@@ -20,7 +21,8 @@
     "eject": "react-scripts eject",
     "server": "react-scripts start",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "postbuild": "react-snap"
 
   },
   "eslintConfig": {
