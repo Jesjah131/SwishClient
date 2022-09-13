@@ -6,6 +6,7 @@ import "./styles.css";
 
 export const MainComponent = () => {
   const [data, setData] = useState(null);
+  const [payments, setPayments] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [viewMode, setViewMode] = useState(true);
 
@@ -28,6 +29,11 @@ export const MainComponent = () => {
     }
   };
 
+  useEffect(() => {
+    //slice the payments
+    setPayments(data?.payments.slice(0, 20));
+  }, [data]);
+
   var opa = 1;
   return (
     <div className={"masselitos"}>
@@ -40,7 +46,7 @@ export const MainComponent = () => {
                 viewMode={viewMode}
               ></TotalAmount>
               <span className={"divider"}></span>
-              {data?.payments.map((payment, i) => {
+              {payments?.map((payment, i) => {
                 return (
                   <li
                     className={"masselist"}
@@ -62,7 +68,7 @@ export const MainComponent = () => {
                 viewMode={viewMode}
               ></TotalAmount>
               <span className={"dividerBig"}></span>
-              {data?.payments.map((payment, i) => {
+              {payments?.map((payment, i) => {
                 return (
                   <li
                     className={"masselistBig"}
