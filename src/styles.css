@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Share');
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: magenta;
+}
+
 .masselitos {
-  position: relative;
+  position: absolute;
   background: #130f40;
   mix-blend-mode: normal;
   background-image: url(Moneyz.png);
@@ -8,7 +17,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1200px;
+  height: 100%;
+  width: 100%;
 }
 
 .unlist {
@@ -82,10 +92,11 @@
 }
 
 .highscoreBig {
+  margin-top: 128px;
   font-family: "Share";
   font-style: normal;
   font-weight: 400;
-  font-size: 250px;
+  font-size: 300px;
   line-height: 93.19%;
   color: #dff9fb;
 }
@@ -142,7 +153,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 16px;
   gap: 0px;
 
   width: 915px;

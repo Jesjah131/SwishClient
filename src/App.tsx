@@ -78,8 +78,8 @@ export const MainComponent = () => {
                     <div className={"name"}>{payment.name && payment.name}</div>
                     <div className={"messageBig"}>
                       {payment.message
-                        ? payment.message
-                        : "Köpte precis något i baren"}
+                        ? '\"' + payment.message + '\"'
+                        : "köpte precis något i baren"}
                     </div>
                   </li>
                 );
