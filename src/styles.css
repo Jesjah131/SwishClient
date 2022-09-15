@@ -4,7 +4,6 @@ html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  background-color: magenta;
 }
 
 .masselitos {
@@ -72,6 +71,7 @@ html, body {
   font-weight: 400;
   font-size: 38px;
   line-height: 56px;
+  
 
   color: #ffffff;
 }
@@ -83,11 +83,12 @@ html, body {
   font-size: 150px;
   line-height: 70px;
   padding-top: 50px;
+  padding-bottom: 0;;
   letter-spacing: 0.065em;
   color: #dff9fb;
   text-align: center;
   display: inline-block;
-  margin: 20px;
+  margin: 8px;
   white-space: nowrap;
 }
 
@@ -98,7 +99,20 @@ html, body {
   font-weight: 400;
   font-size: 300px;
   line-height: 93.19%;
-  color: #dff9fb;
+  color: #FFF;
+  text-shadow: 0px 0px 96px #6d0085, 1px 1px 24px #c7f5ff;
+
+
+  animation: glow 5s infinite alternate ease-out;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 96px #6d0085, 0px 0px 24px #c7f5ff;
+  }
+  to {
+    text-shadow: 0px 0px 96px #6d0085, 0px 0px 48px #c7f5ff;
+  }
 }
 
 .highscoreBig:after {
@@ -136,8 +150,9 @@ html, body {
   line-height: 36px;
   /* identical to box height */
 
-  letter-spacing: 0.18em;
+  letter-spacing: 0.20em;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .messageBig {
@@ -153,7 +168,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  padding: 0px;
   gap: 0px;
 
   width: 915px;

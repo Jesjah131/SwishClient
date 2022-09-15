@@ -64,7 +64,7 @@ export const MainComponent = () => {
           ) : (
             <ul className={"unlistBig"}>
               <TotalAmount
-                data={data.totalSum}
+                data={Math.round(data.totalSum * 0.66)}
                 viewMode={viewMode}
               ></TotalAmount>
               <span className={"dividerBig"}></span>
