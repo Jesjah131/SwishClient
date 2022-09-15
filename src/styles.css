@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Share');
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .masselitos {
-  position: relative;
+  position: absolute;
   background: #130f40;
   mix-blend-mode: normal;
   background-image: url(Moneyz.png);
@@ -8,7 +16,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1200px;
+  height: 100%;
+  width: 100%;
 }
 
 .unlist {
@@ -62,6 +71,7 @@
   font-weight: 400;
   font-size: 38px;
   line-height: 56px;
+  
 
   color: #ffffff;
 }
@@ -73,21 +83,36 @@
   font-size: 150px;
   line-height: 70px;
   padding-top: 50px;
+  padding-bottom: 0;;
   letter-spacing: 0.065em;
   color: #dff9fb;
   text-align: center;
   display: inline-block;
-  margin: 20px;
+  margin: 8px;
   white-space: nowrap;
 }
 
 .highscoreBig {
+  margin-top: 128px;
   font-family: "Share";
   font-style: normal;
   font-weight: 400;
-  font-size: 250px;
+  font-size: 300px;
   line-height: 93.19%;
-  color: #dff9fb;
+  color: #FFF;
+  text-shadow: 0px 0px 96px #6d0085, 1px 1px 24px #c7f5ff;
+
+
+  animation: glow 5s infinite alternate ease-out;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 96px #6d0085, 0px 0px 24px #c7f5ff;
+  }
+  to {
+    text-shadow: 0px 0px 96px #6d0085, 0px 0px 48px #c7f5ff;
+  }
 }
 
 .highscoreBig:after {
@@ -125,14 +150,15 @@
   line-height: 36px;
   /* identical to box height */
 
-  letter-spacing: 0.18em;
+  letter-spacing: 0.20em;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .messageBig {
   color: #ffffff;
   font-family: "Share";
-  font-style: italic;
+  
   font-weight: 400;
   font-size: 48px;
   line-height: 54px;
@@ -148,6 +174,23 @@
   width: 915px;
   height: 98px;
 }
+
+.masseGrid {
+  display: grid;
+  align-items: top;
+  text-align: center;
+  width: 80%;
+  padding: 0 32px 0 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(128px, auto);
+}
+
+.cellWrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+
 
 .unlistBig {
   display: flex;
