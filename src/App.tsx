@@ -68,22 +68,32 @@ export const MainComponent = () => {
                 viewMode={viewMode}
               ></TotalAmount>
               <span className={"dividerBig"}></span>
-              {payments?.map((payment, i) => {
-                return (
-                  <li
-                    className={"masselistBig"}
-                    style={{ opacity: (opa -= 0.08) }}
-                    key={i}
-                  >
-                    <div className={"name"}>{payment.name && payment.name}</div>
-                    <div className={"messageBig"}>
-                      {payment.message
-                        ? '\"' + payment.message + '\"'
-                        : "köpte precis något i baren"}
+            
+              <div className={"masseGrid"}>
+                {payments?.map((payment, i: number) => {
+                  return (
+                    <div
+                      className={"cellWrapper"}
+                      style={{ opacity: i % 2 == 0 ? (opa -= 0.12) : opa }}
+                      key={i}
+                    >
+                      <div className={"name"}>
+                        {payment.name && payment.name}
+                      </div>
+                      <div
+                        style={{
+                          fontStyle: payment.message ? "italic" : "normal",
+                        }}
+                        className={"messageBig"}
+                      >
+                        {payment.message
+                          ? '"' + payment.message + '"'
+                          : "köpte precis något i baren"}
+                      </div>
                     </div>
-                  </li>
-                );
-              })}
+                  );
+                })}
+              </div>
             </ul>
           )}
           <div
