@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/SwishClient/static/css/main.e2397b90.css",
-    "main.js": "/SwishClient/static/js/main.7676e8d3.js",
+    "main.css": "/SwishClient/static/css/main.182b1598.css",
+    "main.js": "/SwishClient/static/js/main.6df9fd2b.js",
     "static/media/Moneyz.png": "/SwishClient/static/media/Moneyz.cdae347dd5f8d94b5168.png",
     "index.html": "/SwishClient/index.html",
-    "main.e2397b90.css.map": "/SwishClient/static/css/main.e2397b90.css.map",
-    "main.7676e8d3.js.map": "/SwishClient/static/js/main.7676e8d3.js.map"
+    "main.182b1598.css.map": "/SwishClient/static/css/main.182b1598.css.map",
+    "main.6df9fd2b.js.map": "/SwishClient/static/js/main.6df9fd2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2397b90.css",
-    "static/js/main.7676e8d3.js"
+    "static/css/main.182b1598.css",
+    "static/js/main.6df9fd2b.js"
   ]
 }
